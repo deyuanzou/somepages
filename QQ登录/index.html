@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        #main {
+            margin: 10px auto;
+            width: 411px;
+            height: 457px;
+            border-radius: 2%;
+            border: 2px solid #A0B0C4;
+        }
+
+        #login_opt {
+            overflow: hidden;
+            margin-bottom: 54px;
+        }
+
+        #login_opt li {
+            float: left;
+            list-style: none;
+            width: 50%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-bottom: 2px solid #B0BBCA;
+        }
+
+        #login_opt li:first-child {
+            color: #A2A2A2
+        } 
+
+        input {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: 38px;
+            border: 2px solid #99A5B3;
+            border-radius: 2px;
+            padding-left: 13px;
+            line-height: 38px;
+        }
+
+
+
+        input:first-child {
+            margin-bottom: 10px;
+        }
+
+        input:nth-child(2) {
+            margin-bottom: 33px;
+            color: red;
+        }
+
+
+        button {
+            display: block;
+            height: 40px;
+            width: 84%;
+            margin: 0 auto;
+            border: 1px solid #6897D8;
+            border-radius: 2px;
+            background-color: #6897D8;
+            color: #FEFFFF;
+            text-align: center;
+            margin-bottom: 62px;
+        }
+
+    span {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        height: 16px;
+        line-height: 16px;
+        vertical-align:bottom;
+    }
+
+    span::before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #CAD3DD;
+        margin-right: 2px;
+        vertical-align:bottom;
+
+    }
+
+    span::after {
+        content: "!";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #CAD3DD;
+        border-radius: 50%;
+        margin-left: 2px;        
+        vertical-align:bottom;
+
+    }
+
+    #other_opt {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        color: #375C92;
+        list-style: none;
+        width: 80%;
+        margin: 25px auto;
+    }
+
+    #other_opt li {
+        text-align: center;
+        height: 24px;
+        line-height: 24px;
+        border-right: 2px solid #E6E8EB;
+        padding-right: 24px;
+    }
+
+    #other_opt li:last-child {
+        border: 0;
+        padding-right: 0;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        <ul id="login_opt">
+            <li>微信登录</li>
+            <li>QQ登录</li>
+        </ul>
+        <form action="#">
+            <input type="text" placeholder="支持QQ号/邮箱/手机号登录">
+            <input type="password" placeholder="QQ密码">
+            <button>登录</button>
+        </form>
+        <span>下次自动登录</span>
+        <ul id="other_opt">
+            <li>找回密码</li>
+            <li>扫码快捷登录</li>
+            <li>注册账号</li>
+        </ul>
+    </div>
+
+</body>
+</html>
